@@ -10,5 +10,5 @@ inputs:
     type: number
 
 runs:
-  using: "node24"
+  using: "node20"
   main: "index.js"
