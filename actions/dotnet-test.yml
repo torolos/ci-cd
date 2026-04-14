@@ -1,0 +1,24 @@
+name: "Run .NET Tests"
+description: "Runs dotnet tests with optional verbosity"
+
+inputs:
+  verbosity:
+    description: "Verbosity level"
+    required: false
+    default: "normal",
+  dotnet-version:
+    description: "Version of .NET"
+    required: true
+    type: string
+  project-location:
+    description: "The test .csproj path"
+    required: true
+    type: string
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run tests
+      shell: bash
+      - name: Run Tests
+        run: dotnet test ${{ inputs.project-location }} --verbosity ${{ inputs.verbosity }}
