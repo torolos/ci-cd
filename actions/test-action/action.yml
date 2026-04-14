@@ -1,4 +1,4 @@
-name: "Run .NET Tests"
+name: "Just echo a simple message"
 description: "Runs dotnet tests with optional verbosity"
 
 inputs:
