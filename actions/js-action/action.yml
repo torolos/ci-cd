@@ -1,0 +1,14 @@
+name: "Test JS Action"
+description: "Outputs a simple message showing the parameters passed"
+
+inputs:
+  test-project:
+    required: true
+    type: string
+  message-count:
+    required: true
+    type: number
+
+runs:
+  using: "node22"
+  main: "index.js"

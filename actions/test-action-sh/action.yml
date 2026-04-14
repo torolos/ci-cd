@@ -20,4 +20,4 @@ runs:
   steps:
     - name: Run tests
       shell: bash
-      run: echo "Action using inline run ${{ inputs.verbosity }}:${{ inputs.dotnet-version }}.${{ inputs.project-location }}"
+      run: ./run-tests.sh ${{ inputs.verbosity }} ${{ inputs.dotnet-version }} ${{ inputs.project-location }}
