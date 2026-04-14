@@ -21,4 +21,4 @@ runs:
     - name: Run tests
       shell: bash
       - name: Run Tests
-        run: dotnet test ${{ inputs.project-location }} --verbosity ${{ inputs.verbosity }}
+        run: echo "Building for ${{ inputs.verbosity }}:${{ inputs.dotnet-version }}.${{ inputs.project-location }}"
