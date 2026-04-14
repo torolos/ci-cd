@@ -5,7 +5,7 @@ inputs:
   verbosity:
     description: "Verbosity level"
     required: false
-    default: "normal",
+    default: "normal"
   dotnet-version:
     description: "Version of .NET"
     required: true
